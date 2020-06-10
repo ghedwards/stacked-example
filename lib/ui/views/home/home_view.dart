@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/ui/smart_widgets/navigation_drawer/navigation_drawer.dart';
 import 'package:stacked/stacked.dart';
 
 import 'home_viewmodel.dart';
@@ -10,11 +11,10 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return ViewModelBuilder<HomeViewModel>.reactive(
       builder: (context, model, child) => Scaffold(
-        body: Center(
-          child: Text(model.title),
-        ),
-        floatingActionButton:
-            FloatingActionButton(onPressed: model.updateCounter),
+          appBar: AppBar(
+            title: Text("Home"),
+          ),
+          drawer: NavigationDrawer()
       ),
       viewModelBuilder: () => HomeViewModel(),
     );

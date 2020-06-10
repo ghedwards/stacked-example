@@ -37,6 +37,7 @@ dependencies:
   observable_ish:
   image_picker: ^0.6.6+4
   http: ^0.12.0+4
+  shared_preferences:
 
 
 dev_dependencies:
