@@ -1,8 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:my_app/ui/views/validation_example/validation_example_viewmodel.dart';
 
-import 'package:flutter_test/flutter_test.dart';
-
 void main() {
   group('ValidationExampleViewmodelTest -', () {
     group('canSubmit -', () {
